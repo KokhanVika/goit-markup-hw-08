@@ -1,0 +1,27 @@
+:root {
+    --main-title-color: #ffffff;
+    --second-title-color: #212121;
+    --main-text-color: #757575;
+    --secondary-text-color: #FFFFFF 60 %;
+    --third-text-color: #ffffff;
+    --third-title-color: #212121;
+    --accent-color: #2196F3;
+    --bg-color: #ffffff;
+    --primery-bg-color: #2F303A;
+    --secondary-bg-color: #F5F4FA;
+    --bt-bg-color: #188CE8;
+    --icons-color: #AFB1B8;
+    --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+ }
+ 
+body {
+    font-family: 'Roboto', sans-serif;
+    @include font();
+    letter-spacing: 0.03em;
+    color: var(--main-text-color);
+}
+.header-logo, .footer-logo {
+    font-family: 'Raleway', sans-serif;
+    @include font(26px, bold, 1.19);
+    color:var(--accent-color);
+}

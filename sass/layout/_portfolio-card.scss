@@ -1,0 +1,59 @@
+.menu-name {
+    color: var(--third-title-color);
+}
+.menu-list { 
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    margin-right: -30px;
+    margin-bottom: -30px;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+.menu-list__item {
+    &:not(:last-child) {
+        @media screen and (max-width: 767px) {
+            margin-bottom: 30px;
+        }
+    }
+        @media screen and (min-width: 768px) {
+            margin-left: 30px;
+            margin-bottom: 30px;
+            width: calc((100% - 2*30px)/2);
+            }
+        
+        @media screen and (min-width: 1200px) {
+            margin-left: 30px;
+            margin-bottom: 30px;
+            width: calc((100% - 3*30px)/3); 
+        }
+}
+.card {
+    display: block;
+    cursor: pointer;
+    color: inherit;
+    transition: box-shadow 250ms var(--timing-function); 
+        &:hover,
+        &:focus {
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+        }
+}
+/*-текст под картинкой-*/
+.card__content {
+    padding: 20px 24px;
+    background-color: var(--bg-color);
+    border:  1px solid #EEEEEE;
+    border-top:  0;
+}
+.card__name {
+    @include font(18px, bold, 2.00);
+    letter-spacing: 0.06em;
+    margin-bottom: 4px;
+    color: var(--second-title-color);
+}
+.card__text {
+    @include font(16px, 400, 1.87);
+}

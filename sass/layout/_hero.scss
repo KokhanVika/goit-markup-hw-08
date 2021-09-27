@@ -1,0 +1,39 @@
+.solutions {
+    max-width: 1600px;
+    margin: 0 auto;
+    background-color: var(--primery-bg-color);
+    background-image:
+        linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
+        url(../images/hero/hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+.solutions__title {
+    margin-bottom: 30px;
+    @include font(44px, 900, 1.36);
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--main-title-color);
+}
+.solutions-button {
+    min-width: 200px;
+    padding: 10px 32px;
+    border-radius: 4px;
+    @include font(14px, bold, 1.87);
+    @include display($dp: block);
+    margin-left: auto;
+    margin-right: auto;
+    letter-spacing: 0.06em;
+    color: var(--bg-color);
+    background: var(--accent-color);
+    transition: background-color 250ms var(--timing-function);
+        &:hover, 
+        &:focus {
+        background-color: var(--bt-bg-color);   
+       }
+}
+
