@@ -442,6 +442,20 @@ img {
   align-items: center;
 }
 
+.menu-toggle {
+  display: inline-flex;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  transition: fill 250ms var(--timing-function);
+}
+
+.menu-toggle:hover, .menu-toggle:focus {
+  fill: var(--accent-color);
+}
+
 .header-navigation, .header-list {
   display: flex;
   align-items: center;
@@ -960,6 +974,13 @@ img {
   transition: box-shadow 250ms var(--timing-function);
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .card:hover, .card:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -970,6 +991,7 @@ img {
   background-color: var(--bg-color);
   border: 1px solid #EEEEEE;
   border-top: 0;
+  flex-grow: 1;
 }
 
 .card__name {
