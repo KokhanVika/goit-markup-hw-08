@@ -107,7 +107,7 @@
         @include display();
         justify-content: center;
         }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1200px) {
         @include font($lh: 1.71);
         }
 }
