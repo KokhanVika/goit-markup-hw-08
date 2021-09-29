@@ -59,11 +59,18 @@
 }
 .solutions__title {
     margin-bottom: 30px;
-    @include font(44px, 900, 1.36);
+    @include font(26px, 900, 1.61);
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--main-title-color);
+    @media screen and (max-width: 479px) {
+        font-size: 5vw;
+    }
+    @media screen and (min-width: 1200px) {
+        @include font(44px, 900, 1.36);
+    }
+
 }
 .solutions-button {
     min-width: 200px;

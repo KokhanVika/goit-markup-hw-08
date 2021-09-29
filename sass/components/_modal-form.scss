@@ -8,7 +8,6 @@
     letter-spacing: 0.03em;
     color: var(--second-title-color);
     margin-bottom: 12px;
-
 }
 .modal-form__field {
     @include font(12px, 400, 1.17);
@@ -95,12 +94,22 @@
     border-color: var(--accent-color);
 }
 .modal-form__check {
-    @include display();
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    @include font($lh: 1.71);
+    @include font(12px, 400, 1.16);
     color: var(--main-text-color);
     cursor: pointer;
     margin-bottom: 30px;
+    text-align: center;
+    
+    @media screen and (min-width: 768px) {
+        @include display();
+        justify-content: center;
+        }
+    @media screen and (min-width: 768px) {
+        @include font($lh: 1.71);
+        }
 }
 .model-form__link {
     color: var(--accent-color);

@@ -20,8 +20,3 @@ body {
     letter-spacing: 0.03em;
     color: var(--main-text-color);
 }
-.header-logo, .footer-logo {
-    font-family: 'Raleway', sans-serif;
-    @include font(26px, bold, 1.19);
-    color:var(--accent-color);
-}

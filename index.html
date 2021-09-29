@@ -15,91 +15,90 @@
 </head>
 <body>
     <!--Шапка сайта-->
-    <!-- <header class="header">
+    <header class="header">
         <div class="conteiner">
-            <div class="menu">
-                <nav class="header-navigation">
-                    <a href="" class="header-logo link animate__pulse" lang="en">Web<span class="header-logo-span">studio</span></a>
-                    <button
-                        class="menu-toggle js-open-menu"
-                        aria-label="Кнопка мобильного меню"
-                        aria-expanded="false"
-                        aria-controls="mobile-menu">
-                        <svg class="icon-toggle" width=40px height=40px>
-                            <use href="./images/sprite.svg#icon-menu"></use>
-                            <use href="./images/sprite.svg#icon-close2"></use>
-                        </svg>
-                    </button>
-                    <ul class="header-list list">
-                        <li class="header-list__item">
-                            <a href="" class="header-list__link link current">Студия</a>
-                        </li>
-                        <li class="header-list__item">
-                            <a href="./portfolio.html" class="header-list__link link">Портфолио</a>
-                        </li>
-                        <li class="header-list__item">
-                            <a href="" class="header-list__link link">Контакты</a>
-                        </li>
-                    </ul>
-                </nav>
-                    <ul class="header-contact list">
-                        <li class="header-contact__item">
-                            <a class="header-contact__mail link contact" href="mailto:info@devstudio.com">
-                                <svg class="header-contact__icon" width="16" height="12">
-                                    <use href="./images/sprite.svg#icon-envelope"></use>
-                                </svg>
-                                info@devstudio.com</a>
-                        </li>
-                        <li class="header-contact__item">
-                            <a class="header-contact__tel link contact" href="tel:+380961111111">
-                                <svg class="header-contact__icon" width="10" height="16">
-                                    <use href="./images/sprite.svg#icon-smartphone"></use>
-                                </svg>
-                                +38 096 111 11 11</a>
-                        </li>
-                    </ul>
-                </div>
+            <a href="" class="header-logo link animate__pulse" lang="en">Web<span class="header-logo-span">studio</span></a>
+            <button type="button" class="burger-btn" data-menu-button>
+                <svg class="burger-btn__icon" width="40" height="40">
+                    <use href="./images/sprite.svg#icon-menu"></use>
+                </svg>
+            </button>
+            <nav class="header-navigation">                
+                <ul class="header-list list">
+                    <li class="header-list__item">
+                        <a href="" class="header-list__link link current">Студия</a>
+                    </li>
+                    <li class="header-list__item">
+                        <a href="./portfolio.html" class="header-list__link link">Портфолио</a>
+                    </li>
+                    <li class="header-list__item">
+                        <a href="" class="header-list__link link">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
             
-            <div>
-            <div class="menu-conteiner js-menu-container" id="mobile-menu">
-                    <button class="menu-toggle js-close-menu">
-                    <svg class="icon-toggle" width="40" height="40">
-                    <use href="./images/sprite.svg#icon-close2"></use>
+            <ul class="header-contact list">
+                <li class="header-contact__item">
+                    <a class="header-contact__mail link contact" href="mailto:info@devstudio.com">
+                    <svg class="header-contact__icon" width="16" height="12">
+                        <use href="./images/sprite.svg#icon-envelope"></use>
                     </svg>
-                </button>
-                <div Class='mobile-menu'>
-                    <ul class="header-list list">
-                        <li class="header-list__item">
-                            <a href="" class="header-list__link link current">Студия</a>
-                        </li>
-                        <li class="header-list__item">
-                            <a href="./portfolio.html" class="header-list__link link">Портфолио</a>
-                        </li>
-                        <li class="header-list__item">
-                            <a href="" class="header-list__link link">Контакты</a>
-                        </li>
-                    </ul>
-                    <ul class="header-contact list">
-                        <li class="header-contact__item">
-                            <a class="header-contact__mail link contact" href="mailto:info@devstudio.com">
-                                <svg class="header-contact__icon" width="16" height="12">
-                                    <use href="./images/sprite.svg#icon-envelope"></use>
-                                </svg>
-                                info@devstudio.com</a>
-                        </li>
-                        <li class="header-contact__item">
-                            <a class="header-contact__tel link contact" href="tel:+380961111111">
-                                <svg class="header-contact__icon" width="10" height="16">
-                                    <use href="./images/sprite.svg#icon-smartphone"></use>
-                                </svg>
-                                +38 096 111 11 11</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>    
-
+                    info@devstudio.com</a>
+                </li>
+                <li class="header-contact__item">
+                    <a class="header-contact__tel link contact" href="tel:+380961111111">
+                    <svg class="header-contact__icon" width="10" height="16">
+                        <use href="./images/sprite.svg#icon-smartphone"></use>
+                    </svg>
+                    +38 096 111 11 11</a>
+                </li>
+            </ul>
         </div>
-    </header> -->
+        <div class="mobile-menu" data-menu>
+            <button type="button" class="mobile-menu-close-btn" data-menu-close>
+                <svg class="mobile-menu-close-btn__icon" width="40" height="40">
+                    <use href="./images/sprite.svg#icon-close"></use>
+                </svg>
+            </button>            
+                <ul class="mobile-menu-nav list">
+                    <li class="mobile-menu__item">
+                        <a href="" class="mobile-menu__link link">Студия</a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="./portfolio.html" class="mobile-menu__link link">Портфолио</a> 
+                    </li>
+                    <li class="mobile-menu__item">
+                       <a href="" class="mobile-menu__link link">Контакты</a> 
+                    </li>
+                </ul>
+            <div class="mobile-menu-list">
+                <ul class="mobile-menu-contact list">
+                    <li class="mobile-menu-contact__item tel">
+                        <a class="mobile-menu-contact__tel link contact" href="tel:+380961111111">
+                        +38 096 111 11 11</a>
+                    </li>
+                    <li class="mobile-menu-contact__item mail">
+                        <a class="mobile-menu-contact__mail link contact" href="mailto:info@devstudio.com">
+                        info@devstudio.com</a>
+                    </li>                    
+                </ul>
+                <ul class="mobile-menu-social list">
+                    <li class="mobile-menu-social__item">
+                        <a href="" class="mobile-menu-social__link link">Instagram</a>
+                    </li>
+                    <li class="mobile-menu-social__item">
+                        <a href="" class="mobile-menu-social__link link">Twitter</a>
+                    </li>
+                    <li class="mobile-menu-social__item">
+                        <a href="" class="mobile-menu-social__link link">Facebook</a>
+                    </li>
+                    <li class="mobile-menu-social__item">
+                        <a href="" class="mobile-menu-social__link link">LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
     <main>
         <!-- Hero -->
         <section class="solutions">
@@ -196,10 +195,10 @@
                 <ul class="team-list list">
                     <li class="team-list__item">
                         <picture>
-                            <source srcset="./images/our-team/desktop/team.1-desktop.1x.jpg 1x, ./images/our-team/desktop/team.1-desktop.2x.jpg 2x" media="(min-width: 1200px)">
-                            <source srcset="./images/our-team/tablet/team.1-tablet.1x.jpg 1x, ./images/our-team/tablet/team.1-tablet.2x.jpg 2x" media="(min-width: 768px)">
-                            <source srcset="./images/our-team/mobile/team.1-mobile.1x.jpg 1x, ./images/our-team/mobile/team.1-mobile.2x.jpg 2x" media="(min-width: 480px)">
-                            <img src="./images/our-team/mobile/team.1-mobile.2x.jpg" alt="фото сотрудника мужчины" width="270" height="260">
+                            <source srcset="./images/our-team/desktop/team.1-desktop.jpg 1x, ./images/our-team/desktop/team.1-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+                            <source srcset="./images/our-team/tablet/team.1-tablet.jpg 1x, ./images/our-team/tablet/team.1-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                            <source srcset="./images/our-team/mobile/team.1-mobile.jpg 1x, ./images/our-team/mobile/team.1-mobile@2x.jpg 2x" media="(min-width: 480px)">
+                            <img src="./images/our-team/mobile/team.1-mobile@2x.jpg" alt="фото сотрудника мужчины">
                         </picture>
                         
                         <div class="team-item-content">
@@ -240,10 +239,10 @@
 
                     <li class="team-list__item">
                         <picture>
-                            <source srcset="./images/our-team/desktop/team.2-desktop.1x.jpg 1x, ./images/our-team/desktop/team.2-desktop.2x.jpg 2x" media="(min-width: 1200px)">
-                            <source srcset="./images/our-team/tablet/team.2-tablet.1x.jpg 1x, ./images/our-team/tablet/team.2-tablet.2x.jpg 2x" media="(min-width: 768px)">
-                            <source srcset="./images/our-team/mobile/team.2-mobile.1x.jpg 1x, ./images/our-team/mobile/team.2-mobile.2x.jpg 2x" media="(min-width: 480px)">
-                            <img src="./images/our-team/mobile/team.2-mobile.2x.jpg" alt="фото сотрудника женщины" width="270" height="260">
+                            <source srcset="./images/our-team/desktop/team.2-desktop.jpg 1x, ./images/our-team/desktop/team.2-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+                            <source srcset="./images/our-team/tablet/team.2-tablet.jpg 1x, ./images/our-team/tablet/team.2-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                            <source srcset="./images/our-team/mobile/team.2-mobile.jpg 1x, ./images/our-team/mobile/team.2-mobile@2x.jpg 2x" media="(min-width: 480px)">
+                            <img src="./images/our-team/mobile/team.2-mobile@2x.jpg" alt="фото сотрудника женщины">
                         </picture>
                         <div class="team-item-content">
                             <h3  class="team-list__name">Ольга Репина</h3>
@@ -283,10 +282,10 @@
 
                     <li class="team-list__item">
                         <picture>
-                            <source srcset="./images/our-team/desktop/team.3-desktop.1x.jpg 1x, ./images/our-team/desktop/team.3-desktop.2x.jpg 2x" media="(min-width: 1200px)">
-                            <source srcset="./images/our-team/tablet/team.3-tablet.1x.jpg 1x, ./images/our-team/tablet/team.3-tablet.2x.jpg 2x" media="(min-width: 768px)">
-                            <source srcset="./images/our-team/mobile/team.3-mobile.1x.jpg 1x, ./images/our-team/mobile/team.3-mobile.2x.jpg 2x" media="(min-width: 480px)">
-                            <img src="./images/our-team/mobile/team.3-mobile.2x.jpg" alt="фото сотрудника мужчины" width="270" height="260">   
+                            <source srcset="./images/our-team/desktop/team.3-desktop.jpg 1x, ./images/our-team/desktop/team.3-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+                            <source srcset="./images/our-team/tablet/team.3-tablet.jpg 1x, ./images/our-team/tablet/team.3-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                            <source srcset="./images/our-team/mobile/team.3-mobile.jpg 1x, ./images/our-team/mobile/team.3-mobile@2x.jpg 2x" media="(min-width: 480px)">
+                            <img src="./images/our-team/mobile/team.3-mobile@2x.jpg" alt="фото сотрудника мужчины">   
                         </picture>
                         
                         <div class="team-item-content">
@@ -327,10 +326,10 @@
 
                     <li class="team-list__item">
                         <picture>
-                            <source srcset="./images/our-team/desktop/team.4-desktop.1x.jpg 1x, ./images/our-team/desktop/team.4-desktop.2x.jpg 2x" media="(min-width: 1200px)">
-                            <source srcset="./images/our-team/tablet/team.4-tablet.1x.jpg 1x, ./images/our-team/tablet/team.4-tablet.2x.jpg 2x" media="(min-width: 768px)">
-                            <source srcset="./images/our-team/mobile/team.4-mobile.1x.jpg 1x, ./images/our-team/mobile/team.4-mobile.2x.jpg 2x" media="(min-width: 480px)">
-                            <img src="./images/our-team/mobile/team.4-mobile.1x.jpg" alt="фото сотрудника мужчины" width="270" height="260">
+                            <source srcset="./images/our-team/desktop/team.4-desktop.jpg 1x, ./images/our-team/desktop/team.4-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+                            <source srcset="./images/our-team/tablet/team.4-tablet.jpg 1x, ./images/our-team/tablet/team.4-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                            <source srcset="./images/our-team/mobile/team.4-mobile.jpg 1x, ./images/our-team/mobile/team.4-mobile@2x.jpg 2x" media="(min-width: 480px)">
+                            <img src="./images/our-team/mobile/team.4-mobile@2x.jpg" alt="фото сотрудника мужчины">
                         </picture>
                         
                         <div class="team-item-content">
