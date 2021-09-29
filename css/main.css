@@ -149,6 +149,12 @@ img {
   justify-content: space-between;
 }
 
+@media screen and (max-width: 479px) {
+  .social-list {
+    justify-content: center;
+  }
+}
+
 .social-list__link {
   display: flex;
   align-items: center;
@@ -1033,6 +1039,12 @@ img {
 
 .team-item-content {
   padding: 30px 122px 24px 122px;
+}
+
+@media screen and (max-width: 479px) {
+  .team-item-content {
+    padding: 30px 0 24px 0;
+  }
 }
 
 @media screen and (min-width: 768px) {

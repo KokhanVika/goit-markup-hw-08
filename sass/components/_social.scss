@@ -1,6 +1,9 @@
 .social-list {
     @include display();
     justify-content: space-between;
+    @media screen and (max-width: 479px) {
+        justify-content: center;
+    }
 }
 .social-list__link {
     @include display();
@@ -17,7 +20,9 @@
         background-color: var(--accent-color);
         color: var(--third-text-color);
         }
+        
 }
+        
 .social-list__icon {
     fill: currentColor;
 }
