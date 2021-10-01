@@ -18,8 +18,11 @@
 <header class="header">
         <div class="conteiner">
             <a href="" class="header-logo link animate__pulse" lang="en">Web<span class="header-logo-span">studio</span></a>
-            <button type="button" class="burger-btn" data-menu-button>
-                <svg class="burger-btn__icon" width="40" height="40">
+            <button type="button"  
+                class="menu-toggle js-open-menu"
+                aria-expanded="false"
+                aria-controls="mobile-menu">
+                <svg class="menu-toggle__icon" width="40" height="40">
                     <use href="./images/sprite.svg#icon-menu"></use>
                 </svg>
             </button>
@@ -54,18 +57,19 @@
                 </li>
             </ul>
         </div>
-        <div class="mobile-menu" data-menu>
-            <button type="button" class="mobile-menu-close-btn" data-menu-close>
-                <svg class="mobile-menu-close-btn__icon" width="40" height="40">
+        <div class="menu-container js-menu-container" 
+            id="mobile-menu">
+            <button type="button" class="menu-toggle js-close-menu">
+                <svg class="menu-toggle__icon" width="40" height="40">
                     <use href="./images/sprite.svg#icon-close"></use>
-                </svg>
-            </button>            
+                </svg>  
+            </button>       
                 <ul class="mobile-menu-nav list">
                     <li class="mobile-menu__item">
                         <a href="./index.html" class="mobile-menu__link link">Студия</a>
                     </li>
                     <li class="mobile-menu__item">
-                        <a href="" class="mobile-menu__link link">Портфолио</a> 
+                        <a href="" class="mobile-menu__link link current">Портфолио</a> 
                     </li>
                     <li class="mobile-menu__item">
                        <a href="" class="mobile-menu__link link">Контакты</a> 
@@ -244,7 +248,7 @@
                                     <source srcset="./images/all/desktop/editions-desktop.jpg 1x, ./images/all/desktop/editions-desktop@2x.jpg 2x" media="(min-width: 1200px)">
                                     <source srcset="./images/all/tablet/editions-tablet.jpg 1x, ./images/all/tablet/editions-tablet@2x.jpg 2x" media="(min-width: 768px)">
                                     <source srcset="./images/all/mobile/editions-mobile.jpg 1x, ./images/all/mobile/editions-mobile@2x.jpg 2x" media="(min-width: 480px)">
-                                    <img src="./images/all/mobile/editions-mobile@2x.jpg" alt="открытая книга">
+                                    <img src="./images/all/mobile/editions-mobile@2x.jpg"  alt="открытая книга">
                                 </picture>
                                 
                                 <p class="overlay">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>

@@ -12,6 +12,7 @@
     color: var(--second-title-color);
 }
 .header-logo {
+    padding: 24px 0 24px 0;
     animation-duration: 250ms;
     @media screen and (min-width: 768px) {
         margin-right: 88px; 

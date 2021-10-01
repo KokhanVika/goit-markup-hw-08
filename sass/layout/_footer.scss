@@ -7,6 +7,7 @@
 .footer-conteiner {
     @media screen and (min-width: 1200px) {
         @include display($ai: baseline);
+        text-align: left;
     }
   
 }
@@ -24,11 +25,15 @@
     color: var(--secondary-text-color);
     line-height: 1.71;
 }
-.footer-item {
+.footer-list__item {
     &:not(:last-child) {
-    margin-bottom: 9px;
+        margin-bottom: 8px;
+    }
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 9px;  
     }
 }
+
 .footer-tablet {
     margin-bottom: 60px;
     @media screen and (min-width: 768px) {
@@ -42,12 +47,14 @@
 }
 .contacts {
     margin-bottom: 60px;
+    @media screen and (min-width: 768px) {
+        margin-bottom: 0px;
+    }
    
     @media screen and (min-width: 1200px) {
         min-width: 230px;
         margin-right: 70px;
-        margin-bottom: 0px;
-    }
+   }
 }
 .social {
     @media screen and (min-width: 1200px) {

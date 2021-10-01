@@ -18,8 +18,12 @@
         min-width: 100vw;       
         min-height: 581px; 
         }
+    @media screen and (min-width: 768px) {
+        width: 450px;       
+        min-height: 609px; 
+        }  
      @media screen and (min-width: 1200px) {
-        max-width: 528px;       
+        width: 528px;       
         min-height: 581px; 
         }
     

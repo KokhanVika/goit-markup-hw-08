@@ -61,6 +61,7 @@
 }  
 .header-contact {
     margin-left: auto;
+    
     @media screen and (min-width: 1200px) {
          @include display();
     }
@@ -72,9 +73,7 @@
    
    @include font($fw: 500);
    letter-spacing: 0.02em;
-   @media screen and (min-width: 1200px) {
-   padding: 32px 0;
-   }
+   
 }
 
 .contact {
@@ -84,19 +83,30 @@
         color: var(--accent-color);
         }
 }
-
-
 .header-contact__item {
-    padding-top: 5px;
-    padding-bottom: 5px;
-    @media screen and (min-width: 1200px) {
     &:not(:last-child) {
-        padding: 0;
-        margin-right: 50px;
-        }    
-    }    
+        margin-bottom: 10px; 
+        @media screen and (min-width: 1200px) {
+            margin-bottom: 0px;  
+            }
+    }
+   
 }
-
+.header-contact__mail {
+    padding-top: 21px;
+    
+    @media screen and (min-width: 1200px) {
+        padding: 32px 0;
+        margin-right: 50px;  
+        } 
+} 
+.header-contact__tel {
+    padding-bottom: 21px;
+    @media screen and (min-width: 1200px) {
+        padding: 32px 0;
+        }
+}
+   
 .header-contact__icon {
     fill: currentColor;
     margin-right: 10px;

@@ -8,6 +8,7 @@
     background-position: center;
     background-size: cover;
     padding: 118px 0px;
+    height: 400px;
     
     @media screen and (min-device-pixel-ratio: 2) and (min-width: 230px),
         screen and (min-resolution: 192dpi) and (min-width: 230px),
@@ -39,6 +40,7 @@
     
     @media screen and (min-width: 1200px) {
         max-width: 1600px;
+        height: 600px;
         background-image: linear-gradient(
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)
