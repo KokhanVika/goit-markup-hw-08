@@ -1,8 +1,13 @@
 .social-list {
     @include display();
-    justify-content: space-between;
-    @media screen and (max-width: 479px) {
+    justify-content: center;
+        @media screen and (max-width: 479px) {
         justify-content: center;
+    }
+}
+.social-list__item {
+    &:not(:last-child) {
+        margin-right: 10px;
     }
 }
 .social-list__link {

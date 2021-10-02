@@ -124,13 +124,14 @@ img {
 }
 
 .header-logo {
-  padding: 24px 0 24px 0;
+  padding: 16px 0 16px 0;
   animation-duration: 250ms;
 }
 
 @media screen and (min-width: 768px) {
   .header-logo {
     margin-right: 88px;
+    padding: 24px 0 24px 0;
   }
 }
 
@@ -147,13 +148,17 @@ img {
 .social-list {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 @media screen and (max-width: 479px) {
   .social-list {
     justify-content: center;
   }
+}
+
+.social-list__item:not(:last-child) {
+  margin-right: 10px;
 }
 
 .social-list__link {
@@ -494,26 +499,13 @@ img {
 
 .header {
   border-bottom: 1px solid #ECECEC;
-  padding-top: 16px;
-  padding-bottom: 16px;
 }
 
 .header .conteiner {
   display: flex;
   align-items: center;
+  position: relative;
   justify-content: space-between;
-}
-
-@media screen and (min-width: 768px) {
-  .header {
-    padding: 0;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .header {
-    padding: 0;
-  }
 }
 
 .header-list {
@@ -679,7 +671,7 @@ img {
 .menu-toggle {
   position: absolute;
   top: 10px;
-  right: 15px;
+  right: 10px;
   background-color: transparent;
   border: none;
 }
@@ -1077,12 +1069,6 @@ img {
 
 @media screen and (min-width: 768px) {
   .team-item-content {
-    padding: 30px 74px 24px 74px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .team-item-content {
     padding: 30px 32px;
   }
 }
@@ -1324,6 +1310,19 @@ img {
 .card:focus .overlay {
   transform: translateY(0%);
   opacity: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .overlay {
+    padding-top: 49px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .overlay {
+    padding: 32px 24px;
+    font-size: 14px;
+  }
 }
 
 .footer {
